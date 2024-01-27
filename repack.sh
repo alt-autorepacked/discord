@@ -7,7 +7,8 @@ _package="discord"
 _download_url="https://discord.com/api/download?platform=linux&format=deb"
 
 _download() {
-    epm -y repack "$_download_url"
+    real_download_url=$(epm tool eget --get-latest-url $_download_url)
+    epm -y repack "$real_download_url"
 }
 
 download_version=$(_get_version_from_download_url)
