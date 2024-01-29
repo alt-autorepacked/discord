@@ -22,7 +22,7 @@ jobs:
     steps:
       - name: install packages
         run: |
-          apt-get update && apt-get -y install eepm git github-cli
+          apt-get update && apt-get -y install eepm git github-cli rpm-build
           epm update
     
       - uses: actions/checkout@v3
