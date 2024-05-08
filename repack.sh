@@ -3,6 +3,7 @@
 epm tool eget https://raw.githubusercontent.com/alt-autorepacked/common/v0.2.0/common.sh
 . ./common.sh
 
+epm install asar
 cp discord.sh /etc/eepm/repack.d/discord.sh
 
 _package="discord"
