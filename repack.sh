@@ -3,6 +3,8 @@
 epm tool eget https://raw.githubusercontent.com/alt-autorepacked/common/v0.2.0/common.sh
 . ./common.sh
 
+cp discord.sh /etc/eepm/play.d/discord.sh
+
 _package="discord"
 _download_url="https://discord.com/api/download?platform=linux&format=deb"
 
