@@ -15,10 +15,11 @@ jobs:
       matrix:
         branch:
           - sisyphus
+          - p11
           - p10
         arch:
           - amd64
-    uses: alt-autorepacked/common/.github/workflows/update.yml@v0.5.2
+    uses: alt-autorepacked/common/.github/workflows/update.yml@v0.6.1
     with:
       branch: ${{ matrix.branch }}
       arch: ${{ matrix.arch }}
